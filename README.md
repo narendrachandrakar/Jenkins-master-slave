@@ -1,5 +1,12 @@
-# Docker Series
-https://code-maze.com/docker-series/
 
-## Part 8 of the Docker Series on CodeMaze blog
-https://code-maze.com/ci-jenkins-docker/
+Docker Installation:
+https://docs.docker.com/install/linux/docker-ce/debian/
+
+Docker Build and Docker Run for the Jenkins Container:
+
+docker build -t jenkins-master .
+docker build -t jenkins-slave .
+
+docker-compose -f docker-compose.ci.yml up
+
+docker-compose -f docker-compose.ci.yml down
