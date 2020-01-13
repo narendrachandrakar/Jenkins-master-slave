@@ -4,7 +4,7 @@ RUN /usr/local/bin/install-plugins.sh git mstest matrix-auth workflow-aggregator
 
 ENV JENKINS_USER admin
 ENV JENKINS_PASS admin
-
+RUN /usr/local/bin/install-plugins.sh greenballs
 # Skip initial setup
 ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
 
